@@ -1,0 +1,10 @@
+// flex布局
+
+@charset "utf-8";
+
+// 默认是列
+@mixin flex($direction: column,$inline:block){
+	display: if($inline==block,flex,inline-flex);
+	flex-direction:$direction;
+	flex-wrap:wrap;
+}
