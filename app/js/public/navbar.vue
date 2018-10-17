@@ -55,7 +55,7 @@
 		right: 0;
 		bottom: 0;
 		height: 100px;
-		margin: 0;
+		margin: 0!important;
 		>h4{
 			display: none;
 		}
