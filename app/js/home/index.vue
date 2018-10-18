@@ -4,10 +4,14 @@
 		<Heador/>
 		<!-- 轮播 -->
 		<Hslider/>
+		<!-- 新手特权 -->
+		<Novice/>
 		<!-- 极速借贷 -->
 		<Borrow/>
-		<!--  -->
+		<!-- 理财精选 -->
 		<Money/>
+		<!-- 新品推荐 -->
+		<Product/>
 		<!-- 生活服务 -->
 		<Life/>
 		<!-- 导航栏 -->
@@ -26,6 +30,8 @@
 	import Borrow from "../home/borrow.vue"
 	import Life from "../home/life.vue"
 	import Money from "../home/money.vue"
+	import Novice from "../home/novice.vue"
+	import Product from "../home/product.vue"
 	export default {
 		components:{
 			Heador,
@@ -35,6 +41,8 @@
 			Borrow,
 			Life,
 			Money,
+			Novice,
+			Product,
 		},
 	}
 </script>
