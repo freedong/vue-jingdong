@@ -32,9 +32,38 @@
 </script>
 
 
+<style lang="scss">
+	.swiper-container-vertical{
+		height: 72px;
+		.swiper-slide{
+			font-family: PingFangSC-Medium;
+			font-size: 28px;
+			color: #333;
+			em{
+				color: #ddd;
+				float: right;
+				margin-right: 20px;
+			}
+		}
+	}
+</style>
+
+
 <style lang="scss" module>
 	@import "../../css/element.scss";
 	.panel{
-		
+		@include panel;
+		>h4{
+			display: none;
+		}
+		margin-top: 120px!important;
+		.content{
+			// width: 178px;
+			height: 72px;
+			line-height: 72px;
+			overflow: hidden;
+			padding-left: 178px;
+			background: url(//m.jr.jd.com/spe/qyy/main/images/scroll_title_img.png) left top no-repeat;
+		}
 	}
 </style>

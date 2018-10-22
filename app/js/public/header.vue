@@ -3,7 +3,10 @@
 		<span :class="$style.left">
 			<em>注册</em>&nbsp;|&nbsp;<em>登录</em>
 		</span>
-		<btn :class="$style.btnDownload">APP下载</btn>
+		<!-- <btn :class="$style.btnDownload">APP下载</btn> -->
+		<router-link :to="{ name:'download' }">
+			<btn :class="$style.btnDownload">APP下载</btn>
+		</router-link>
 	</div>
 </template>
 <script>

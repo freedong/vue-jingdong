@@ -2,7 +2,9 @@
 	<div>
 		<Header/>
 		<Rslider/>
+		<In/>
 		<Daily/>
+		<More/>
 		<Footer/>
 		<Navbar/>	
 	</div>
@@ -15,6 +17,8 @@
 	import Navbar from "../public/navbar.vue"
 	import Daily from "../raise/daily.vue"
 	import Rslider from "../raise/rslider.vue"
+	import In from "../raise/in.vue"
+	import More from "../raise/more.vue"
 	export default {
 		components: {
 			Header,
@@ -22,6 +26,8 @@
 			Navbar,
 			Daily,
 			Rslider,
+			In,
+			More,
 		}
 	}
 </script>
