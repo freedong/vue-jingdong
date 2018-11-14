@@ -72,6 +72,10 @@ module.exports = env => {
         'vue$': 'vue/dist/vue.esm.js'
       }
     },
+    devServer: {
+        historyApiFallback: true,
+        noInfo: true
+    },
     plugins,
     output: {
       filename: '[name].min.js',

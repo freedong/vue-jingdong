@@ -11,8 +11,21 @@ import "../../css/reset.scss" //公用样式
 
 Vue.use(Router)//使用路由
 
+
+
+const scrollBehavior = (to,from,savedPosition) => {
+	if(savedPosition){
+		return savedPosition
+	}else{
+		return {x:0,y:0}
+	}
+}
+
+
+
 export default new Router({
-	// mode: 'history',
+	mode:'history',//去除url地址链接中的#
+	scrollBehavior,//切换组件  回到顶部
 	routes:[
 	{
 		path:"/",
@@ -40,4 +53,4 @@ export default new Router({
 		component:Download,
 	}
 	],
-})
+});
